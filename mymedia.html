@@ -49,7 +49,21 @@
         </tbody>
     </table>
 
+    <hr>
+ 
+    <h2>JAVA code snippet</h2>
+    <p>Converts the given array elements into <li> tags and appends them to the list of the given id.</p>
+    <pre>
+        const arrayToHTMLList = (arr, listID) =>
+        document.querySelector(`#${listID}`).innerHTML += arr
+          .map(item => `
+      ${item}
+      `)
+          .join('');
+    </pre>
 
+    <a href="https://code.pieces.app/collections/javascript">JAVA Code Snippet</a>
 
+  
     </body>
     </html>
